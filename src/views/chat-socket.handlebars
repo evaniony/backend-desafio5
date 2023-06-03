@@ -1,5 +1,17 @@
 <div>
-    <p>A prueba de socket</p>
+    <h1>Bienvenide <span id="span-nombre"></span>!</h1>
+    <h2>Listado de productos:</h2>
+    <div id="div-msgs" style="border: 1px solid #000; margin: 10px;">
+        Loading...
+    </div>
+    <form action="get" id="form">
+        <input type="text" placeholder="name" id="input-title">
+        <input type="text" placeholder="price" id="input-price">
+        <input type="text" placeholder="description" id="input-description">
+        <button type="submit">send</button>
+    </form>
+
 </div>
 <script src="/socket.io/socket.io.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="/js/chat-socket.js"></script>
